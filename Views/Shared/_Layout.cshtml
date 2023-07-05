@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css"/>
+  
+
+</head>
+<body>
+
+    <main role="main" class="pb-3">
+        
+    <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">Clinica XD</a></h2>
+
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="#" class="nav_link">Inicio</a></li>
+            <li><a href="#" class="nav_link">Doctores</a></li>
+            <li><a href="#" class="nav_link">Procedimientos</a></li>
+            <li><a href="#" class="nav_link">Especialidades</a></li>
+            <li><a href="#" class="nav_link">Contactanos</a></li>
+          </ul>
+          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header> 
+
+      </main>
+      @RenderBody()
+</body>
+</html>
