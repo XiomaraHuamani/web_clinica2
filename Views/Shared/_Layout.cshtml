@@ -12,24 +12,23 @@
 <body>
 
     <main role="main" class="pb-3">
-        
+        @RenderBody()
     <header>
         <nav class="nav container">
           <h2 class="nav_logo"><a href="#">Clinica XD</a></h2>
 
           <ul class="menu_items">
             <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
-            <li><a href="#" class="nav_link">Inicio</a></li>
-            <li><a href="#" class="nav_link">Doctores</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Doctores">Docotres</a></li>  
             <li><a href="#" class="nav_link">Procedimientos</a></li>
             <li><a href="#" class="nav_link">Especialidades</a></li>
-            <li><a href="#" class="nav_link">Contactanos</a></li>
+            <li><a href="#" class="nav_link" >Contactanos</a></li>
           </ul>
           <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
         </nav>
       </header> 
-
       </main>
-      @RenderBody()
+    @RenderBody()
 </body>
 </html>

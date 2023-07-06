@@ -4,11 +4,11 @@ using web_clinica.Models;
 
 namespace web_clinica.Controllers
 {
-    public class HomeController : Controller
+    public class DoctoresController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<DoctoresController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public DoctoresController(ILogger<DoctoresController> logger)
         {
             _logger = logger;
         }
@@ -19,11 +19,6 @@ namespace web_clinica.Controllers
         }
 
         public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        public IActionResult Doctores()
         {
             return View();
         }
